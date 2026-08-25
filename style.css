@@ -23,35 +23,47 @@ body {
 /* ================================
    HEADER / NAVBAR
 ================================ */
-
 header {
     background-color: #ffffff;
-    padding: 20px 10%;
     border-bottom: 1px solid #dddddd;
 }
 
-nav {
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 20px 40px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav h2 {
-    font-size: 26px;
-    color: #2563eb;
-}
-
-nav a {
+.logo a {
     text-decoration: none;
-    color: #222222;
-    margin-left: 25px;
-    font-weight: 500;
-}
-
-nav a:hover {
+    font-size: 28px;
+    font-weight: bold;
     color: #2563eb;
 }
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
 
+.nav-links a {
+    text-decoration: none;
+
+    color: #222222;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
 
 /* ================================
    HERO SECTION
