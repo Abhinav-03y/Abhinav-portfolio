@@ -45,6 +45,7 @@ header {
     font-weight: bold;
     color: #2563eb;
 }
+
 .nav-links {
     display: flex;
     gap: 30px;
@@ -220,6 +221,167 @@ section h2 {
     background-color: #ffffff;
 }
 
+
+/* Section Heading */
+
+.section-heading {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.section-heading p {
+    color: #2563eb;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+.section-heading h2 {
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+
+.section-heading span {
+    color: #666666;
+
+    font-size: 16px;
+}
+
+
+/* ================================
+   PROJECT GRID
+================================ */
+
+.project-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+
+/* ================================
+   PROJECT CARD
+================================ */
+
+.project-card {
+    background-color: #f8fafc;
+
+    padding: 30px;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 12px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Project Title */
+
+.project-card h3 {
+    font-size: 24px;
+
+    margin-bottom: 15px;
+
+    color: #111827;
+}
+
+
+/* Project Description */
+
+.project-card p {
+    color: #64748b;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+
+/* ================================
+   TECHNOLOGY TAGS
+================================ */
+
+.project-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-bottom: 25px;
+}
+
+.project-tags span {
+    background-color: #dbeafe;
+
+    color: #2563eb;
+
+    padding: 5px 12px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+
+/* ================================
+   PROJECT LINK
+================================ */
+
+.project-link {
+    display: inline-block;
+
+    color: #2563eb;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* ================================
+   HOVER EFFECT
+================================ */
+
+.project-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ================================
+   MOBILE PROJECTS
+================================ */
+
+@media (max-width: 768px) {
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+}
 
 /* ================================
    CONTACT SECTION
