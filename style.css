@@ -511,6 +511,89 @@ section h2 {
     background-color: #f5f7fb;
 }
 
+.contact-container {
+    max-width: 750px;
+    margin: auto;
+}
+
+.contact-form {
+    background-color: #ffffff;
+
+    padding: 35px;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 12px;
+}
+.form-group {
+    margin-bottom: 22px;
+}
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    color: #1e293b;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-family: inherit;
+
+    outline: none;
+
+    transition: border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #94a3b8;
+}
+.contact-form button {
+    width: 100%;
+
+    padding: 13px 20px;
+
+    background-color: #2563eb;
+
+    color: #ffffff;
+
+    border: 2px solid #2563eb;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+.contact-form button:hover {
+    background-color: #ffffff;
+
+    color: #2563eb;
+}
 
 /* ================================
    FOOTER
@@ -579,4 +662,96 @@ footer {
     .skills-container {
         grid-template-columns: 1fr;
     }
+}
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 768px) {
+
+    /* Navbar */
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 20px;
+    }
+
+
+    .nav-links {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 50px 5%;
+    }
+
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+
+    .hero h2 {
+        font-size: 21px;
+    }
+
+
+    .hero-image img {
+        width: 220px;
+
+        height: 220px;
+    }
+
+
+    /* Sections */
+
+    section {
+        padding: 50px 5%;
+    }
+
+
+    section h2 {
+        font-size: 32px;
+    }
+
+
+    /* Projects */
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* About */
+
+    .about-content {
+        padding: 25px;
+    }
+
+
+    /* Contact */
+
+    .contact-form {
+        padding: 25px;
+    }
+
 }
